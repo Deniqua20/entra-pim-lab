@@ -26,6 +26,7 @@ ToolPurposeMicrosoft Entra IDIdentity platform and PIM engineMicrosoft Entra ID 
 
 
 Architecture
+
 The diagram below shows the full flow built in this lab.
 The blue row is the access flow  a user requests a privileged role, must provide justification and pass MFA, an approver reviews the request, and the role activates for exactly one hour then auto-expires.
 The pink row is the detection and response layer  every activation is captured in audit logs, Sentinel fires an alert on suspicious patterns, and a Logic App auto-revokes the role.
